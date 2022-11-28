@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+        <!-- Json object to String -->
+
+        let jsonObj={
+            "Name": "Priyanshu",
+            "Last Name": "Singh",
+            "Gender": "Male",
+            "Email": "priyanshumth0808@gmail.com"
+        }
+        console.log(jsonObj);
+        let jsonStr=JSON.stringify(jsonObj); //Syntax
+        console.log(jsonStr);
+
+        // string to objects
+
+        newJsonObj = JSON.parse(jsonStr);
+        console.log(newJsonObj);
+
+        // object to json array
+
+        var jsonObjj={
+            "array": ["Alpha", "Priyanshu", "Singh"] 
+        }
+        console.log(jsonObjj);
+
+    </script>
+</body>
+</html>

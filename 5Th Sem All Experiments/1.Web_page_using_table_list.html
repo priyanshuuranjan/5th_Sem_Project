@@ -1,0 +1,78 @@
+ <!-- Design web page using table and list concept in HTML. -->
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         table,
+         th,
+         tr {
+             border: 2px solid red;
+         }
+
+         tr,
+         ul {
+             border: 2px solid red;
+         }
+     </style>
+ </head>
+
+ <body>
+     <table>
+         <tr>
+             <th>Name</th>
+             <th>Subjects</th>
+             <th>Marks</th>
+         </tr>
+         <tr>
+             <th>Priyanshu</th>
+             <th>Maths</th>
+             <th>86</th>
+         </tr>
+         <tr>
+             <td rowspan=""></td>
+             <th>Science</th>
+             <th>95</th>
+         </tr>
+         <tr>
+             <td rowspan=""></td>
+             <th>Labs</th>
+             <th>96</th>
+         </tr>
+     </table>
+
+     <table style="width: 50%">
+         <caption style="text-align: center; ">Employees</caption>
+         <tr>
+             <th>EmployeeName</th>
+             <th>Languages Known</th>
+         </tr>
+         <tr>
+             <td>Priyanshu</td>
+             <td>
+                 <ul>
+                     <li>HTML</li>
+                     <li>Java</li>
+                     <li>C</li>
+                 </ul>
+             </td>
+         </tr>
+         <tr>
+             <td>Alpha</td>
+             <td>
+                 <ul>
+                     <li>C#</li>
+                     <li>Java</li>
+                     <li>C</li>
+                 </ul>
+             </td>
+         </tr>
+     </table>
+
+ </body>
+
+ </html>

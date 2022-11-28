@@ -1,0 +1,110 @@
+<!-- Design attractive web page using CSS and JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .heading {
+            background-color: rgb(29, 205, 211);
+        }
+
+        p {
+            background-color: rgb(236, 237, 242);
+            margin: top 10px;
+            margin: 25px;
+            font: size 30px;
+            padding: 8px;
+        }
+
+        .myBtn {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid lightgrey;
+            border-radius: 4px;
+            margin: 10px;
+        }
+        input[type="button"] {
+            background: #4daea1;
+            padding: 12px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <div class="heading">
+        <h1>Welcome To Online Payment</h1>
+    </div>
+    <p>Name: <input type="text" name="name" placeholder="Priyanshu" required> </p>
+    <p>Gender: Male<input type="radio" name="gender" placeholder="Male" required> Female<input type="radio"
+            name="gender" placeholder="Female" required> </p>
+    <p>Address: <input type="textarea" rows="10" cols="5"></textarea> </p>
+    <p> Pin: <input type="number" name="pin" placeholder="Pin" required></p>
+
+    <h2>Card details</h2>
+    <select>
+        <option value="">--Select a Card Type--</option>
+        <option value="Rupya">Rupya</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="Visa">Visa</option>
+    </select>
+    <p>Card No. <input type="number" name="number"></p>
+    <p> CVV: <input type="password" name="cvv" id="cvv"></p>
+    <p> Expiration Date: <input type="date" name="exp_date" id="exp_date"></p>
+    <input type="button" id="myBtn" value="Pay Now" onclick="showMessage()" />
+
+    <script>
+        function showMessage() {
+            alert("Thanku for Your Payment");
+        }
+    </script>
+</body>
+
+</html>
+
+
+
